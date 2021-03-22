@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+.personalsite_panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personalsite {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 50vh;
+    width: 50vw;
+    max-height: 55vh;
+    max-width: 55vw;
+    box-shadow: 0px 37px 26px -2px rgba(209, 209, 209, 0.34);
+    transform: scale(1);
+    transition: transform 270ms;
+}
+
+.personalsite_header {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    position: relative;
+}
+.personalsite_header p {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    /* background-color: white; */
+
+    margin: 5px;
+    top: 0;
+    cursor: pointer;
+}
+.fa-bars {
+    color: white;
+}
+.personalsite_header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.personalsite_main nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    font-size: clamp(10px, 0.8vw, 14px);
+}
+.personalsite_nav {
+    width: 80%;
+}
+
+.personalsite_nav p {
+    cursor: pointer;
+}
+
+#about {
+    border-bottom: 2px solid #6d6d6d;
+}
+
+.personalsite_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+}
+
+.personalsite_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 85%;
+    word-break: break-all;
+}
+
+.title {
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    line-height: 15px;
+    margin: 10px 10px 17px 0;
+}
+.intro {
+    text-transform: uppercase;
+    font-size: clamp(9px, 0.6vw, 15px);
+    margin-bottom: 8px;
+}
+.author {
+    margin-top: 8px;
+}
+.personalsite_article hr {
+    /* border: 2px solid black; */
+    width: 40%;
+}
+
+.personalsite_text {
+    height: 100%;
+    width: 93%;
+    word-break: break-all;
+    font-size: clamp(11px, 0.8vw, 20px);
+    line-height: 19px;
+}
+
+.personalsite_text p::first-letter {
+    float: left;
+    font-weight: bold;
+    font-size: 4rem;
+    /* padding: 2px; */
+    margin: 0.1em 0.2em 0.1em 0;
+    line-height: 0.5;
+}
+
+@media only screen and (max-width: 1450px) {
+    .personalsite {
+        height: 48vh;
+        width: 60vw;
+        max-height: 49vh;
+        max-width: 65vw;
+        transform: scale(1.1);
+        transition: transform 300ms;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .personalsite {
+        /* background-color: red; */
+        /* background-color: red; */
+        /* height: 48vh;
+        width: 60vw;
+        max-height: 49vh;
+        max-width: 65vw; */
+        transform: scale(1.2);
+        transition: transform 300ms;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .personalsite {
+        /* background-color: red; */
+        height: 48vh;
+        width: 60vw;
+        max-height: 53vh;
+        max-width: 65vw;
+        transform: scale(1.3);
+        transition: transform 300ms;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+    .personalsite {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        /* width: 70vw;
+        max-height: 75vh;
+        max-width: 89vw; */
+        /* box-shadow: 0px 37px 26px -2px rgba(209, 209, 209, 0.34);
+        transform: scale(1);
+        transition: transform 270ms; */
+    }
+    .title {
+        font-weight: bold;
+        font-size: clamp(1.2rem, 1.4vw, 2rem);
+        line-height: 15px;
+        margin: 5px 5px 9px 0;
+    }
+    .hr_{
+        margin: 0;
+    }
+    .personalsite_header p {
+        display: block;
+    }
+
+    .personalsite_header {
+        width: 100%;
+        height: 46%;
+        overflow: hidden;
+    }
+
+    .personalsite_header img {
+        height: 158%;
+    }
+    .personalsite_main nav {
+        display: none;
+    }
+
+    .personalsite_main {
+        height: 60%;
+        width: 100%;
+    }
+    .personalsite_article {
+        /* width: 80%; */
+        height: 83%;
+    }
+
+    .personalsite_text p::first-letter {
+        font-size: 3rem;
+        margin: 0.2em 0.2em 0.14em 0;
+        line-height: 0.5;
+    }
+}
