@@ -86,14 +86,14 @@ function App() {
         </article>
 
         <section>
-          <button>
+          {/* <button>
             <span><i className="fas fa-copy"></i></span>
             <p>CDN</p>
           </button>
           <button>
             <span><i className="fas fa-copy"></i></span>
             <p>{`font-family: '${fontState.h1}' font-family: '${fontState.p}' `}</p>
-          </button>
+          </button> */}
         </section>
 
       </main>
