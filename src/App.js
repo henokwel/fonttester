@@ -7,6 +7,7 @@ import Personalsite from './Components/Scens/Personalsite';
 import { Autocomplete } from '@material-ui/lab';
 import { TextField } from '@material-ui/core';
 import appReducer from './utils/reducer';
+import NewsSite from './Components/Scens/NewsSite';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -79,6 +80,10 @@ function App() {
 
         <article className="container" >
           <Personalsite
+            h1_={fontState.h1}
+            p_={fontState.p}
+          />
+          <NewsSite
             h1_={fontState.h1}
             p_={fontState.p}
           />
